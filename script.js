@@ -4,7 +4,7 @@ const resetGridButton = document.querySelector('#reset-grid');
 const colorSelector = document.querySelector('#color-selector');
 
 let gridSize = 16;
-const gridDimension = 700;
+const gridDimension = 600;
 const color = [ "#3C9EE7", "#E7993C", "#E73C99", "#3CE746", "#E7993C"];
 
 createGrid();
