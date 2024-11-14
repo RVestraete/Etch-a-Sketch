@@ -1,25 +1,29 @@
 const body = document.querySelector('body');
 const mainContainer = document.querySelector('#main-container');
 
+const buttonContainer = document.createElement('.button-container');
+mainContainer.appendChild(buttonContainer);
+
 const button1 = document.createElement("button");
-mainContainer.appendChild(button1);
+buttonContainer.appendChild(button1);
 
-const gridSize = 16;
+const gridSize = 10;
 const cellCount = gridSize * gridSize;
-const gridDimension = 960;
+const gridDimension = 500;
 
-for (i = 0; i < gridSize; i++){
-    const row = document.createElement("div");
-    row.className = "row";
-    mainContainer.appendChild(row);
+mainContainer.style.width = `${gridDimension}px`;
+mainContainer.style.height = `${gridDimension}px`;
 
+const cellSize = gridDimension / gridSize - 2;
 
-    for(j = 0; j < gridSize; j++){
+for (let i = 0; i < cellCount; i++){
 
-        const column = document.createElement("div");
-        column.className = "column";
-        row.appendChild(column);
-        }
+    const column = document.createElement("div");
+    column.className = "column";
+    column.className = "column";
+    column.style.width = `${cellSize}px`;
+    column.style.height = `${cellSize}px`;
+    mainContainer.appendChild(column);
 }
 
 let color = [ "#3C9EE7", "#E7993C", "#E73C99", "#3CE746", "#E7993C"];
