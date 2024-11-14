@@ -1,0 +1,21 @@
+#main-container{
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex; 
+    width: 100%;
+}
+
+.column{
+    width: 100%; 
+    margin: 1px; 
+    border-radius: 4px; 
+    border: 2px solid grey; 
+    padding: 15px;
+}
